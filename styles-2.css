@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cornsilk;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Aumenta la escala al pasar el mouse */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover .product-info {
+    background: rgba(255, 255, 255, 0.9); /* Cambia el fondo de la información */
+}
